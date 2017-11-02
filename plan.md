@@ -41,6 +41,7 @@ A place to write about code
 |----------|------------|
 | `id`     | Primary Key|
 | `title`  | Varchar()  |
+| `image`  | Varchar()	|	
 | `post`   | Text       |
 | `created`| Timestamp  |
 
@@ -99,7 +100,7 @@ no arguments
 
 no arguments
 
-* display portfolio projects
+* display skills
 
 ### Inspiration notes
 
