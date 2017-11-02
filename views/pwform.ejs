@@ -1,0 +1,93 @@
+<html>
+	<head>
+		<title>Password Required</title>
+
+		<style>
+			*, *:before, *:after {
+	         box-sizing: border-box;
+            }
+
+
+			body {
+				background: #bfbd72;
+				margin: 0;
+			}
+			
+
+           .nav{
+	        width: 100%;
+	        height: 70px;
+	        padding: 15px;
+	        background-color: tomato;
+    		border-bottom: 1.5px solid #ff6a50;
+    		border-style: ridge;
+            }
+
+           ul {
+	       text-align: right;
+         margin-top: 0;
+            }
+
+
+		   li { 
+	
+          display: inline-block;
+          height: 30px;
+          margin: 5px;
+ 	        padding-top: 4px;
+            }	
+
+           a:hover {
+             color: grey;
+            }
+
+           a {
+             color: #dfd6d6;;
+             font-size: 20px;
+             text-decoration: none;
+    
+            }
+			form {
+				margin: 70px auto;
+				width: 220px;
+				padding: 20px;
+				background: #FFF;
+				border: 1px solid #CCC;
+				border-radius: 3px;
+			    border-style: outset;
+			}
+			input,
+			button {
+				display: block;
+				width: 100%;
+			}
+			p {
+				color: red;
+				margin-bottom: 10px;
+			}
+			
+
+
+		</style>
+	</head>
+	<body>
+		<nav class="nav">
+		 <ul class="menu">
+			<li><a href="/" class="bulletin">Home</a></li>
+			<li><a href="/add" class="add">New Message</a></li>
+			<li><a href="/search" class="search">Search & Delete</a></li>
+		 </ul>
+		</nav>
+		<form method="get">
+			<% if (message) { %>
+				<p><%- message %></p>
+			<% } %>
+			<input name="password" type="password" placeholder="Password"/>
+			<button>Submit</button>
+		</form>
+	</body>
+</html>
+		 	
+
+
+			

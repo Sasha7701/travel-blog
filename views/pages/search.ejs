@@ -1,0 +1,25 @@
+<div class="travel-search">
+
+<h1 class="welcome">Welcome!</h1>
+
+		<% if (message) { %>
+			<p><%- message %></p>
+		<% } %>
+
+		<form action= "/search" method="get" class="search">
+			<input type="text" name="search" placeholder="Search" />
+			<button class="button-search">Search</button>
+		</form>
+
+<div class="img-search">
+		<% for(let i = 0; i < title.length; i++) { %>
+	<ul class="search-img">
+			        <li class="pic-search"><img src="<%= title[i].image %>" /></li>
+					<li class="search-title"><%= title[i].title %></li>
+					<li class="search-comment"><%= title[i].comment %></li>
+
+
+</ul>
+       <% } %>
+</div>
+</div>

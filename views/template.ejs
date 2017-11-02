@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<title>Alex's  <%= title %></title>
+		<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+	    <!-- <link rel="stylesheet" type="text/css" href="/css/pills.css"> -->
+			<meta name="viewport" content="width=device-width,initial-scale=1">
+	</head>
+	<!-- <div class="container"> -->
+	<body>
+<nav class="navbar navbar-inverse" style="margin:0; border-radius: 0; border-bottom: 3px solid #038e03;">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+			 			<span class="icon-bar"></span>
+			 			<span class="icon-bar"></span>
+		 			</button>
+					<a class="navbar-brand" href="/">Alex Polotskiy</a>
+    			</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav  navbar-right">
+				<li><a href="/">About Me</a></li>
+                <li><a href="/destinations">Destinations</a></li>
+                <li><a href="/search">Search-Destination</a></li>
+          		<li><a href="/posts">Admin</a></li>
+        	</ul>
+				</div>
+	  </div>
+	</nav>
+
+		<main class="template">
+			<% if (page) { %>
+				<%- include("./pages/" + page, pageArgs); %>
+			<% } else { %>
+				No page variable provided!
+			<% } %>
+		</main>
+
+		<footer>
+			<a href="#"><img class="icon1" src="http://www.worldyogacenter.com/wp-content/uploads/2014/01/facebooktransparent.png"/></a>
+			<a href="https://www.linkedin.com/in/alex-polotsky-444193117/"><img class="icon2" src="https://farm8.staticflickr.com/7205/6779161210_c237861b66_b.jpg"/></a>
+			<a href="https://github.com/Sasha7701"><img class="icon3" src="http://flaticns.com/web-icons/github.png"/></a>
+			<!-- <a href="#"><img class="icon2" src="https://farm8.staticflickr.com/7058/6937175085_ea4714c6a8_b.jpg"/></a>
+ -->
+ 		</footer>
+	<!-- </div> -->
+	</body>
+</html>
