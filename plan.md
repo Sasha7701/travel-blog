@@ -49,7 +49,8 @@ A place to write about code
 ```JSON
 {
 	"id": "SERIAL PRIMARY KEY",
-	"title": "VARCHAR(64)",
+	"title": "VARCHAR(100)",
+	"image": "VARCHAR(250)",
 	"post": "TEXT",
 	"created_at": "TIMESTAMP default CURRENT_TIMESTAMP"
 }
