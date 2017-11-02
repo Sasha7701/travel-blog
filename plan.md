@@ -7,7 +7,8 @@ Develop a fully functional Portfolio | Blog app, using Node, Express and Postgre
 ### 1. Portfolio
 A place to show off previous projects and showcase development skills
 
-* Each project has an image and an animated gif for a visual representation of functionality
+* Each project should have an image and an animated gif for a visual representation of functionality
+
 * A description of each project with links to either github or heroku
 
 ### 2. Blog
@@ -30,7 +31,9 @@ A place to write about code
 
 ### Database structure
 
+
 #### tables
+
 
  `Posts`
 
@@ -61,7 +64,6 @@ A place to write about code
 
 * the layout page will have links to the portfolio page and a submit page
 * the landing page will display the most recent posts
-*
 
 ### GET `/submit`
 
@@ -81,7 +83,9 @@ no arguments
 * upon success, redirects to `/` home page
 * on error, error message sent to user, prevent default submit
 
+<<<<<<< HEAD
 ### GET `/search`
+
 
 | Argument  |  Description                       |
 |-----------|------------------------------------|

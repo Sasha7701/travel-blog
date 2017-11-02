@@ -10,17 +10,15 @@ const Blog = {
 			title: title,
 		    comment: comment,
 		    image: image
-
-		});
+			});
 
 	},
-
 
 	search: function(search) {
 		return Posts.findAll ({
 			where: {
 				title: {
-					$like: "%" + search + "%",
+					$like: "%" + search + "%"
 				},
 			},
 		});

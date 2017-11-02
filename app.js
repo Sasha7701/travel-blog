@@ -52,8 +52,8 @@ app.post("/posts", uploader.single("file"), function(req, res) {
 	.then(function(title, comment, image) {
 		// fs.readdir("./assets/images", function(err, images) {
 	res.redirect("/destinations");
-   })
-	.catch(function(err) {
+
+   }).catch(function(err) {
 		res.status(403);
  	    res.render("/");
   	})
@@ -65,8 +65,8 @@ app.get("/destinations", function(req, res) {
 		.then(function(blog, body) {
 			renderTemplate(res, "Destinations", "destinations", {
 				blog: blog,
-
 			});
+			console.log(blog);
 		});
 });
 
@@ -80,8 +80,7 @@ app.get("/search", function(req, res) {
 			comment: comment,
 			images: images,
 			message: "Showing results for '" + req.query.search + "'",
-		})
-	.catch(function(err) {
+		}).catch(function(err) {
 		res.status(401);
  	    res.render("/");
   	});
@@ -103,6 +102,7 @@ app.get("/search", function(req, res) {
 // 		console.log(req.body.title);
 // 	});
 // });
+
 app.get("*", function(req, res) {
 res.status(404);
 res.render("page404");
