@@ -1,4 +1,4 @@
-# Portfolio Blog app
+# Portfolio-Travel Blog app
 
 Develop a fully functional Portfolio | Blog app, using Node, Express and PostgreSQL, that has the ability to store and retrieve blog posts from a postgres database.
 
