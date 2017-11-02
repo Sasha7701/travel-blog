@@ -83,7 +83,6 @@ no arguments
 * upon success, redirects to `/` home page
 * on error, error message sent to user, prevent default submit
 
-<<<<<<< HEAD
 ### GET `/search`
 
 
